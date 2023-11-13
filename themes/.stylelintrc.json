@@ -1,0 +1,25 @@
+{
+    "extends": [
+        "stylelint-config-sass-guidelines"
+    ],
+    "rules": {
+        "indentation": [
+            4,
+            {
+                "except": [
+                    "value"
+                ]
+            }
+        ],
+        "at-rule-no-unknown": null,
+        "selector-max-compound-selectors": 5,
+        "max-nesting-depth": 99,
+        "selector-max-id": 99
+    },
+    "ignoreFiles": [
+        "**/node_modules/",
+        "shared/fontawesome/**/*.scss",
+        "**/*.css",
+        "**/*.min.css"
+    ]
+}
