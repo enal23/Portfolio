@@ -5,8 +5,8 @@ Author: Ensaf Alic
 Social:
     - title: Link till portfoliots GitHub.
       url: https://github.com/enal23/Portfolio
-      icon: github
+      icon: fab fa-github
     - title: Link till LinkedIn sida.
       url: https://se.linkedin.com/in/ensaf-alic
-      icon: linkedin
+      icon: fab fa-linkedin
 ---
