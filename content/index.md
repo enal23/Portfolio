@@ -18,6 +18,6 @@ Du har hittat till min hemsida där du kan följa min resa i designkursen. Jag h
 
 ### Intressen
 På fritiden gillar jag att vara ute i skogen, fiska och spendera tid med familjen. Jag har även ett
-livslångt intresse av tech. Efter att jag har skaffat ett akvarium har jag också blivit väldigt intresserad av [aquascaping](https://www.google.com/search?q=aquascaping&tbm=isch).
+livslångt intresse av tech. Efter att jag har skaffat ett akvarium har jag också blivit väldigt intresserad av [Aquascaping](https://www.zoopet.com/akvarieguide/kategori.php?NR=50).
 
 ![Min träkåsa med kaffe på lite mossa](%assets_url%/img/kåsa.jpeg)
