@@ -1,0 +1,25 @@
+{
+  "name": "themes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "lint": "stylelint \"**/*.scss\"",
+    "style-kmom02": "sass kmom02/scss/style.scss kmom02/css/style.css --no-source-map",
+    "style-kmom02-min": "sass kmom02/scss/style.css kmom02/css/style.min.css --no-source-map -style compressed",
+    "style": "sass nebula/scss/style.scss nebula/css/style.css --no-source-map",
+    "style-min": "sass nebula/css/style.css nebula/css/style.min.css --no-source-map --style compressed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "normalize.css": "^8.0.1",
+    "sass": "^1.69.5",
+    "stylelint": "^15.11.0",
+    "stylelint-config-sass-guidelines": "^10.0.0"
+  }
+}
