@@ -1,0 +1,87 @@
+/* Header */
+
+
+.header {
+    @include DarkTheme;
+    width: 100%;
+    margin: 0 auto;
+
+    .header-border {
+        background-color: #3338ff;
+        height: 3px;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+
+        .gradient {
+            animation-direction: alternate;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-name: headerGradient;
+            animation-timing-function: linear;
+            background: linear-gradient(90deg,#3338ff 50%,#13f2dc 60%,#3338ff 80%);
+            height: 100%;
+            left: -100%;
+            position: absolute;
+            transform: scale(0);
+            width: 50%;
+            will-change: transform;
+        }
+    }
+
+    .site-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            padding: 1em;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        .title {
+            * {
+                text-align: center;
+                margin: 0;
+                line-height: 1;
+                text-decoration: none;
+            }
+        
+            p {
+                text-align: center;
+                margin-top: 5px;
+            }
+        
+        }
+        
+    }
+}
+
+
+/* Title */
+@media (max-width: 767px) {
+    .title, .logo {
+        padding: 1em 1em 1em 0;
+    }
+
+    .title {
+        min-width: 50%;
+    }
+    
+    .logo {
+        max-width: 30%;
+    }
+}
+
+@keyframes headerGradient {
+    0% {
+        transform:scale(0)
+    }
+
+    to {
+        transform:scale(100)
+    }
+}

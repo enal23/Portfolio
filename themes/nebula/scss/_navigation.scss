@@ -1,0 +1,22 @@
+/* Navigation */
+#main-nav{
+    a{
+        text-decoration: none;
+        padding: 2px;
+    }
+
+    li {
+        .active a, a:hover{
+            border-bottom: 2px solid #167eea;
+        }
+    }
+    
+}
+
+.hidden {
+    display: none !important;
+}
+
+html, body {
+    height: 100%;
+}
