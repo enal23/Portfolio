@@ -1,6 +1,6 @@
 ---
 Logo: image/ea-logo.png
-Tagline: There is not for man except that for which he strives.
+Tagline: Code is poetry.
 Author: Ensaf Alic
 Social:
     - title: Link till portfoliots GitHub.
