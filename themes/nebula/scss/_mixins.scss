@@ -2,3 +2,30 @@
     background-color: #1a1a1d;
     color: #fff;
 }
+
+@mixin grid($columns: 3, $gap: 15px, $template: repeat($columns, 1fr)) {
+    display: grid;
+    grid-template-columns: $template;
+    grid-template-rows: auto;
+    gap: $gap;
+}
+
+@mixin span($start-line, $end-line) {
+    
+    > .span-#{$start-line}-#{$end-line} {
+        grid-column: #{1} / #{-1};
+    }
+    @media screen and (min-width: 965px) {
+        > .span-#{$start-line}-#{$end-line} {
+            grid-column: #{$start-line} / #{$end-line};
+        }
+    }
+
+    
+}
+
+@mixin hide-mobile(){
+    @media screen and (max-width: 965px) {
+        display: none;
+    }
+}
