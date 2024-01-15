@@ -5,14 +5,15 @@
             <a href="{{ base_url }}">
                 <img src="{{ base_url }}/{{ pages["_meta"].meta.logo|url }}?w=100" alt="" />
             </a>
+            <div class="title" {{ pages["_meta"].meta.tagline ? ' class="tagline"' }}>
+                <a href="{{ base_url }}">
+                    <h1>{{ pages["_meta"].meta.author }}</h1>
+                    {{ pages["_meta"].meta.tagline|markdown }}
+                </a>
+            </div>
         </div>
         {% endif %}
-        <div class="title" {{ pages["_meta"].meta.tagline ? ' class="tagline"' }}>
-            <a href="{{ base_url }}">
-                <h1>{{ pages["_meta"].meta.author }}</h1>
-                {{ pages["_meta"].meta.tagline|markdown }}
-            </a>
-        </div>
+        
         <a class="nav-toggle" id="nav-toggle" title="Toggle Menu" role="button" aria-controls="nav" aria-expanded="false"
             tabindex="1">
             <i class="fa fa-bars" aria-hidden="true" id="toggler"></i>

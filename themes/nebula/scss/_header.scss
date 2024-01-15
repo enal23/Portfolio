@@ -36,6 +36,12 @@
 
         .logo {
             padding: 1em;
+            display: flex;
+            align-items: center;
+
+            .title {
+                margin-left: 1em;
+            }
         }
 
         a {
