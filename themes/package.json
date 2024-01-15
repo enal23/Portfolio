@@ -10,8 +10,14 @@
     "lint": "stylelint \"**/*.scss\"",
     "style-kmom02": "sass kmom02/scss/style.scss kmom02/css/style.css --no-source-map",
     "style-kmom02-min": "sass kmom02/scss/style.css kmom02/css/style.min.css --no-source-map -style compressed",
-    "style": "sass nebula/scss/style.scss nebula/css/style.css --no-source-map",
-    "style-min": "sass nebula/css/style.css nebula/css/style.min.css --no-source-map --style compressed"
+    "watch": "sass nebula/scss/style.scss:nebula/css/style.css nebula/scss/style-dark.scss:nebula/css/style-dark.css --no-source-map --watch",
+    "watch-min": "sass nebula/scss/style.scss:nebula/css/style.min.css nebula/scss/style-dark.scss:nebulacss/style-dark.min.css --no-source-map --watch --style compressed",
+    "style": "npm run style-light && npm run style-dark",
+    "style-min" : "npm run style-light-min && npm run style-dark-min",
+    "style-dark": "sass nebula/scss/style-dark.scss nebula/css/style-dark.css --no-source-map",
+    "style-dark-min": "sass nebula/scss/style-dark.scss nebula/css/style-dark-min.css --no-source-map --style compressed",
+    "style-light": "sass nebula/scss/style.scss nebula/css/style.css --no-source-map",
+    "style-light-min": "sass nebula/css/style.css nebula/css/style.min.css --no-source-map --style compressed"
   },
   "keywords": [],
   "author": "",
