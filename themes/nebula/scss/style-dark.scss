@@ -1,0 +1,32 @@
+
+
+@use "../../node_modules/normalize.css/normalize.css";
+@import "variables";
+@import "mixins";
+@import "navigation";
+@import "placement";
+
+$primary-color: #1572ce;
+@import "typography";
+@import "header";
+@import "code";
+
+@import "responsive";
+@import "technology";
+@import "footer";
+// Font Awesome
+@import "../../shared/fontawesome/scss/fontawesome";
+$fa-font-path: '../../shared/fontawesome/webfonts';
+@import "../../shared/fontawesome/scss/brands";
+@import "../../shared/fontawesome/scss/solid";
+@import "../../shared/fontawesome/scss/regular";
+
+$darkBg: #041628;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $darkBg;
+}
