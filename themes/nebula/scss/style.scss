@@ -12,6 +12,7 @@
 
 @import "responsive";
 @import "technology";
+@import "gallery";
 
 // Font Awesome
 @import "../../shared/fontawesome/scss/fontawesome";
@@ -22,4 +23,14 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 
 * {
     box-sizing: border-box;
+}
+
+iframe {
+    .analysis-result {
+        width: 100%;
+    }
+}
+
+.analysis-img {
+    max-width: 100%;
 }

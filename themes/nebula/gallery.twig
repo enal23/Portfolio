@@ -1,0 +1,28 @@
+{% include 'incl/header.twig' %}
+
+<body>
+    {% include 'incl/nav.twig' %}
+    {% set images = ['architecture', 'flower', 'forest', 'meadow', 'mountains', 'nature', 'ocean', 'student', 'tree'] %}
+
+    <div class="main" role="main">
+        <h1 class="title">{{ meta.title }}</h1>
+        <div class="gallery">
+            {% for image in images %}
+                <a href="{{ base_url }}/image/{{ image }}.jpg">
+                    <picture>
+                        <source media="(min-width: 668px)" srcset="{{ base_url }}/image/{{ image }}.jpg?width=50%, {{ base_url }}/image/{{ image }}.jpg 2x">
+                        <source media="(min-width: 376px)" srcset="{{ base_url }}/image/{{ image }}.jpg?width=25%">
+                        <img src="{{ base_url }}/image/flower.jpg" class="max-width" title="{{ image|capitalize}}" alt="{{ image|capitalize }}">
+                    </picture>
+                </a>
+            {% endfor %}
+        </div>
+        
+
+        {{ content }}
+    </div>
+    
+    {% include 'incl/footer.twig' %}
+</body>
+
+</html>
